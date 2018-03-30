@@ -92,11 +92,32 @@
         <p class="album__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed sint doloremque repellat, iste debitis.</p>
       </div>
     </div>
-
   </div>
 
 
   <style>
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 2rem;
+    }
+
+    .album {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 15rem 1fr;
+      grid-gap: 1rem;
+      align-items: center;
+      color: white;
+      font-weight: 100;
+    }
+
+    .album__artwork {
+      width: 100%;
+    }
+
   </style>
 </body>
 
